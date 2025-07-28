@@ -1,4 +1,4 @@
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=RafliMaulanaR&theme=react-dark&hide_border=true&grid=false&radius=16&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=RafliMaulanaR&theme=react-dark&hide_border=true&grid=false&radius=16&area=true)]
 <!--
 **RafliMaulanaR/RafliMaulanaR** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
