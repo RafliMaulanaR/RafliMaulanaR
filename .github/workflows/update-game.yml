@@ -1,26 +1,25 @@
 name: Update Space Shooter Game
 
 on:
-schedule:
-- cron: '0 0 * * *'
-workflow_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
-update-game:
-runs-on: ubuntu-latest
+  update-game:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
-```
-steps:
-  - uses: actions/checkout@v6
-    with:
-      fetch-depth: 2
-
-  - uses: czl9707/gh-space-shooter@v2
-    with:
-      github-token: ${{ secrets.GITHUB_TOKEN }}
-      output-path: 'game.gif'
-      strategy: 'random'
-```
+      - name: Generate Space Shooter
+        uses: czl9707/gh-space-shooter@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          output-path: game.gif
+          strategy: random
